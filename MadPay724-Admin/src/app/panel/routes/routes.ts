@@ -1,5 +1,5 @@
 import { Routes, RouterModule } from '@angular/router';
-import { LoginComponent } from 'src/app/login/login.component';
+import { AuthComponent } from 'src/app/auth/auth.component';
 import { PanelComponent } from '../panel.component';
 
 export const panelRoutes : Routes = [
