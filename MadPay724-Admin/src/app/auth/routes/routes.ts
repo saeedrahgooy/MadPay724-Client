@@ -3,7 +3,7 @@ import { AuthComponent } from '../auth.component';
 import { LoginComponent } from '../components/login/login.component';
 import { RegisterComponent } from '../components/register/register.component';
 
-export const authRoutes : Routes = [
+export const authRoutes: Routes = [
   {
     path : 'auth' ,
     component : AuthComponent,
