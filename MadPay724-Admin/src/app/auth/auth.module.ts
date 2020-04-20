@@ -16,8 +16,7 @@ import {HttpClientModule} from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(authRoutes),
-    FormsModule,
-    HttpClientModule
+    FormsModule
   ],
   declarations: [
     AuthComponent ,

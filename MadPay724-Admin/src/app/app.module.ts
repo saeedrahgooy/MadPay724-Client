@@ -9,6 +9,9 @@ import { adminRoutes } from './routes/routes';
 import { ErrorInterceptorProvider } from './Services/error.interceptor';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
+import { HttpClientModule } from '@angular/common/http';
+import { LoadingBarHttpClientModule } from '@ngx-loading-bar/http-client';
+import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
 
 @NgModule({
   declarations: [AppComponent],
@@ -25,9 +28,14 @@ import { ToastrModule } from 'ngx-toastr';
       preventDuplicates: true,
       progressBar: true,
       progressAnimation: 'decreasing',
-    })
+    }),
+    HttpClientModule,
+    LoadingBarHttpClientModule,
+    LoadingBarRouterModule,
   ],
-  providers: [ErrorInterceptorProvider],
+  providers: [
+    ErrorInterceptorProvider,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
